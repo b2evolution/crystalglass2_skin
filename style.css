@@ -1,0 +1,851 @@
+/******************************************************
+** Title........: Crystal Glass II Stylesheet
+** Filename.....: /skins/crystalglass2/style.css
+** Author.......: DiasWebWorks
+** Website......: www.LorenDias.com
+**
+** Version......: 2008.09.15 23:51
+** Editor.......: Loren
+*******************************************************/
+
+@import url("../../rsc/css/basic.css");			/* Import basic styles */
+@import url("../../rsc/css/img.css");			/* Import standard image styles */
+@import url("../../rsc/css/blog_elements.css");	/* Import standard blog elements styles */
+@import url("../../rsc/css/forms.css");			/* Import default form styles */
+@import url("../../rsc/css/comments.css");		/* Import default comment styles */
+
+/******************************************************/
+/* Page                                               */
+
+* {
+	margin: 0;
+	/*padding: 0;*/
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	background: #D6D6D6 url('images/htmlBG.png');
+	min-width: 740px;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background: url('images/bodyBG.png') repeat-x top center;
+	font-size: 1em;
+    font-family: verdana, 'Lucida Grande', helvetica, sans-serif;
+    text-align: center;
+}
+
+/* END Page                                           */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* Elements                                           */
+
+a, a:link, a:active, a:visited {
+    color: #0066CC;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div {
+    margin: 0 auto;
+    padding: 0;
+    background-color: transparent;
+}
+
+img {
+    border: 0;
+}
+
+input, textarea {
+    font-size: 0.8em;
+    font-family: verdana, 'Lucida Grande';
+    font-weight: bold;
+}
+
+p {
+	padding: 8px 0 8px 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+}
+
+/* END Elements                                       */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* Universes                                          */
+
+#universe {
+    padding: 20px 0;
+	width: 100%;
+    text-align: center;
+}
+
+#sector {
+    width: 740px;
+    background: url('images/sectorBG.png') repeat-y top center;
+    text-align: center;
+}
+
+#world {
+    margin: 0 auto;
+    padding: 0;
+    width: 740px;
+    height: auto;
+    text-align: center;
+}
+
+/* END Universes                                      */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* Worlds                                             */
+
+#worldHeader {
+	margin: 0;
+	padding: 0;
+	width: 740px;
+	height: 200px;
+	background: url('images/headerBackground.png') no-repeat top center;
+}
+
+	div.widget_core_coll_title {
+		padding: 50px 0 0 30px;
+		text-align: left;
+	}
+
+		div.widget_core_coll_title a {
+		font-size: 2.25em;
+		color: #FFF;
+		font-family: verdana, arial;
+		font-weight: none;
+		letter-spacing: 5px;
+		}
+		
+			div.widget_core_coll_title a:hover {
+				text-decoration: none;
+				color: #92C4E7;
+			}
+		/* END a */
+	/* END .widget_core_coll_title */
+
+	div.widget_core_coll_tagline {
+		padding: 10px 0 0 60px;
+		text-align: left;
+		color: #92C4E7;
+		font-family: arial, verdana;
+		font-weight: bold;
+		font-size: 0.8em;
+		
+	}
+/* END #worldHeader */
+
+div.top_menu { /* #worldNavigation */
+	margin: 0;
+	padding: 0;
+	width: 720px;
+	height: 25px;
+	font-size: 0.7em;
+	font-weight: bold;
+	overflow: hidden;
+	background: transparent url('images/navigationBG.png') repeat-x top center;
+}
+
+	div.top_menu div.widget_core_colls_list_public {
+		width: 720px;
+		height: 25px;
+	}
+	/* END div */
+	
+	div.top_menu ul {
+		width: 720px;
+		height: 25px;
+		float:left;
+	}
+	
+		div.top_menu ul li {
+			display: inline;
+			float: left;
+		}
+		
+			div.top_menu ul li a {
+				margin: 0;
+				padding: 0 20px;
+				line-height: 25px;
+				display: block;
+				font-weight: bold;
+				border-right: 1px solid #AAA;
+				
+			}
+			
+			div.top_menu ul li a:hover {
+				color: #FFF;
+				background: #17304E;
+				text-decoration: none;
+			}
+			
+			div.top_menu ul li a.selected {
+				background: #FFF;
+				color: #000;
+				text-decoration: none !important;
+			}
+		/* END li */
+	/* END ul */
+/* END div.top_menu */		
+	
+
+#worldBody {
+	margin: 0 10px;
+	padding: 0;
+	width: 720px;
+	text-align: left;
+	font-size: 0.9em;
+	background: #FFF;
+}
+
+	.narrowcolumn {
+		padding: 0 20px 20px !important;
+		width: 460px !important;
+		line-height: 1.4em;
+		text-align: left !important;
+		float: left;
+	}
+
+	.widecolumn {
+		padding: 0 20px 20px !important;
+		width: 680px !important;
+		line-height: 1.6em;	
+		text-align: left !important;
+		float: left;
+		background: #FFF;
+	}
+	
+	#commonBody {
+		margin: 35px 20px 10px 20px;
+		padding: 0;
+		width: 680px;
+	}
+		
+		
+		#bodyNavigation {
+			padding: 0;
+			width: 220px;
+			font-size: 0.75em;
+			float: right;
+			background: #DFDFDF url('images/bodyNavigationBG.png') repeat-y top right;
+		}
+		
+			#rightNavigation {
+				margin: 0;
+				padding: 0 20px;
+				width: 180px;
+				float: right;
+				background: url('images/bodyNavigationBackground.png') no-repeat top right;
+				padding-top:20px; padding-bottom:20px;
+			}
+				
+				#bodyNavigation ul {
+					
+				}
+				
+				#bodyNavigation a {
+					color: #0066CC;
+					line-height: 2em;
+					text-decoration: none;
+				}
+				
+				#bodyNavigation a:hover {
+					color: #000;
+					text-decoration: underline;
+				}
+				
+		/* END #bodyNavigation */
+/* END #worldBody */
+
+#worldFooter {
+	margin: 0 10px;
+	width: 720px;
+	height: 20px;
+	font-size: 10px;
+	line-height: 20px;
+	color: #333 !important;
+	background: url('images/footerBG.png') bottom center;
+}
+
+	#footerCopyright {
+		padding: 0 0 0 10px;
+		width: 490px;
+		height: 20px;
+		float: left;
+		text-align: left;
+	}
+	
+	#footerCredit {
+		width: 220px;
+		height: 20px;
+		float: right;
+		line-height: 20px;
+		text-align: center;
+	}
+	
+	#worldFooter a {
+		color: #333 !important;
+		line-height: 20px;
+		line-height: 20px;
+		text-decoration: none;
+	}
+	
+	#worldFooter a:hover {
+		text-decoration: underline;
+	}
+/* END #worldFooter */
+
+#worldClear {
+	clear: both;
+}
+
+/* END Worlds                                         */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+
+
+
+
+
+
+
+.bText p {
+font-size: 1.05em;
+}
+
+.bText {
+line-height: 1.4em;
+}
+
+.postmetadata {
+text-align: center;
+}
+
+.alt {
+background-color: #f8f8f8;
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+}
+
+#footer {
+background: url('img/kubrickfooter.jpg') no-repeat bottom;
+border: none;
+}
+
+small {
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 0.9em;
+line-height: 1.5em;
+}
+
+h1, h2, h3 {
+font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+font-weight: bold;
+}
+
+h1 {
+font-size: 340%;
+text-align: center;
+}
+
+h2 {
+font-size: 1.6em;
+}
+
+h2.pagetitle {
+font-size: 1.6em;
+}
+
+#sidebar h2 {
+font-family: 'Lucida Grande', Verdana, Sans-Serif;
+font-size: 1.2em;
+}
+
+h3 {
+font-size: 1.3em;
+}
+
+h1, h1 a, h1 a:hover, h1 a:visited {
+text-decoration: none;
+color: white;
+}
+
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited {
+color: #333;
+}
+
+h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar h2, #wp-calendar caption, cite {
+text-decoration: none;
+}
+
+.bText p a:visited {
+color: #b85b5a;
+}
+
+.commentlist li, #commentform input, #commentform textarea {
+font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+.commentlist li {
+font-weight: bold;
+}
+
+.commentlist cite, .commentlist cite a {
+font-weight: bold;
+font-style: normal;
+font-size: 1.1em;
+}
+
+.commentlist p {
+font-weight: normal;
+line-height: 1.5em;
+text-transform: none;
+}
+
+#commentform p {
+font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+.commentmetadata {
+font-weight: normal;
+}
+
+#sidebar {
+font: 1em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike {
+color: #777;
+}
+
+code {
+font: 1.1em 'Courier New', Courier, Fixed;
+}
+
+acronym, abbr, span.caps
+{
+font-size: 0.9em;
+letter-spacing: .07em;
+}
+
+a, h2 a:hover, h3 a:hover {
+color: #06c;
+text-decoration: none;
+}
+
+a:hover {
+color: #147;
+text-decoration: underline;
+}
+
+#wp-calendar #prev a, #wp-calendar #next a {
+font-size: 9pt;
+}
+
+#wp-calendar a {
+text-decoration: none;
+}
+
+#wp-calendar caption {
+font: bold 1.3em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+text-align: center;
+}
+
+#wp-calendar th {
+font-style: normal;
+text-transform: capitalize;
+}
+/* End Typography & Colors */
+
+
+
+
+.post {
+margin: 0 0 40px;
+text-align: justify;
+}
+
+.post hr {
+display: block;
+}
+
+.post {
+margin: 0;
+}
+
+.postmetadata {
+padding-top: 5px;
+}
+
+.postmetadata {
+margin: 30px 0;
+}
+
+.smallattachment {
+text-align: center;
+float: left;
+width: 128px;
+margin: 5px 5px 5px 0px;
+}
+
+.attachment {
+text-align: center;
+margin: 5px 0px;
+}
+
+.postmetadata {
+clear: left;
+}
+
+.posttags {
+	clear: both;
+	text-align: center;
+	color: #777;
+}
+
+
+
+/*	Begin Headers */
+h1 {
+margin: 0;
+}
+
+h2 {
+margin: 20px 0 0;
+}
+
+h2.pagetitle {
+margin-top: 30px;
+text-align: center;
+}
+
+#sidebar h2 {
+margin: 5px 0 0;
+padding: 0;
+}
+
+h3 {
+padding: 0;
+margin: 30px 0 0;
+}
+
+h3.comments {
+padding: 0;
+margin: 40px auto 20px ;
+}
+/* End Headers */
+
+
+
+/* Begin Images */
+p img {
+padding: 0;
+max-width: 100%;
+}
+
+/*	Using 'class="alignright"' on an image will (who would've
+thought?!) align the image to the right. And using 'class="centered',
+will of course center the image. This is much better than using
+align="center", being much more futureproof (and valid) */
+
+img.centered {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+img.alignright {
+padding: 4px;
+margin: 0 0 2px 7px;
+display: inline;
+}
+
+img.alignleft {
+padding: 4px;
+margin: 0 7px 2px 0;
+display: inline;
+}
+
+.alignright {
+float: right;
+}
+
+.alignleft {
+float: left
+}
+/* End Images */
+
+
+
+/* Begin Lists
+
+Special stylized non-IE bullets
+Do not work in Internet Explorer, which merely default to normal bullets. */
+
+html>body .bText ul {
+margin-left: 0px;
+padding: 0 0 0 30px;
+list-style: none;
+padding-left: 10px;
+text-indent: -10px;
+}
+
+html>body .bText li {
+margin: 7px 0 8px 10px;
+}
+
+.bText ul li:before, #sidebar ul ul li:before {
+content: "\00BB \0020";
+}
+
+.bText ol {
+padding: 0 0 0 35px;
+margin: 0;
+}
+
+.bText ol li {
+margin: 0;
+padding: 0;
+}
+
+.postmetadata ul, .postmetadata li {
+display: inline;
+list-style-type: none;
+list-style-image: none;
+}
+
+#sidebar ul, #sidebar ul ol {
+margin: 0;
+padding: 0;
+}
+
+#sidebar ul li {
+list-style-type: none;
+list-style-image: none;
+margin-bottom: 15px;
+}
+
+#sidebar ul p, #sidebar ul select {
+margin: 5px 0 8px;
+}
+
+#sidebar ul ul, #sidebar ul ol {
+margin: 5px 0 0 10px;
+}
+
+#sidebar ul ul ul, #sidebar ul ol {
+margin: 0 0 0 10px;
+}
+
+ol li, #sidebar ul ol li {
+list-style: decimal outside;
+}
+
+#sidebar ul ul li, #sidebar ul ol li {
+margin: 3px 0 0;
+padding: 0;
+}
+/* End bText Lists */
+
+
+
+
+/* Begin Sidebar */
+#sidebar
+{
+padding: 20px 0 10px 0;
+margin-left: 545px;
+width: 190px;
+}
+
+#sidebar form {
+margin: 0;
+}
+
+
+#sidebar .note,
+#sidebar .notes {
+margin-top: 1ex;
+font-size: 100%;
+}
+
+table.bCalendarTable {
+font-size: 100%;
+width: 155px;
+}
+table.bCalendarTable caption {
+font-size: 130%;
+}
+table.bCalendarTable th {
+font-size: 100%;
+}
+
+input.SearchField {
+width: 182px;
+padding: 2px;
+}
+/* End Sidebar */
+
+
+
+
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {
+cursor: help;
+}
+
+acronym, abbr {
+border-bottom: 1px dashed #999;
+}
+
+blockquote {
+margin: 15px 30px 0 10px;
+padding-left: 20px;
+border-left: 5px solid #ddd;
+}
+
+blockquote cite {
+margin: 5px 0 0;
+display: block;
+}
+
+.center {
+text-align: center;
+}
+
+hr {
+display: none;
+}
+
+a img {
+border: none;
+}
+
+.navigation {
+display: block;
+text-align: center;
+margin-top: 10px;
+margin-bottom: 60px;
+}
+/* End Various Tags & Classes*/
+
+
+/* Default styles overriden for this skin: */
+table.prevnext_post {
+width: 100%;
+}
+
+/* Styles for comments */
+div.bComment, /* Entire comment block */
+form.bComment /* New comment form */
+{
+	margin: 0;
+	border: 0;
+}
+
+div.moderation_msg
+{
+margin: 1ex 0;
+}
+
+
+/*
+ * Header / bloglist on top:
+ */
+div#header ul {
+float:right;
+list-style-type:none;
+margin: 0;
+padding: 27px 24px;
+}
+div#header li {
+margin: 0;
+display: inline;
+padding: 0 1ex 0 0;
+}
+div#header li a {
+font-weight: bold;
+font-style:italic;
+color: #fff;
+}
+div#header li a:hover {
+color: #666;
+text-decoration: underline;
+}
+div#header li a.selected {
+text-decoration: underline;
+}
+
+form.bComment fieldset div.label {
+	text-align: left !important;
+	width: 30% !important;
+}
+
+form.bComment fieldset div.input {
+	margin: 0 0 0 30%;
+}
+
+
+
+.widget_core_linkblog ul li {
+	padding: 15px 0 0 0;
+	font-weight: bold;
+}
+
+.widget_core_linkblog ul li ul {
+	padding: 0;
+	font-weight: none;
+}
+
+.widget_core_linkblog ul li ul li {
+	padding: 0;
+}
+
+.sitewide_header {
+	margin-bottom: 0px !important;
+	z-index: 1000;
+	position: relative;
+}
+#skin_wrapper {
+	z-index: -1;
+}
+
+#bCalendarToday {
+	border: none !important;
+	background-color: #0066CC !important;
+	color: #fff;
+}
+
+form.bComment .submit, form.bComment .preview, .compact_search_form .submit, #content .extended_search_form .submit {
+	color: #fff;
+	background-color: #0066CC;
+	border-radius: 0px !important;
+	border:1px solid #0066CC !important;
+	cursor: pointer;
+	padding: 2px 4px;
+}
+#content .extended_search_form .submit {
+	margin-left: 3px;
+}
+form.bComment .submit:hover, form.bComment .preview:hover, .compact_search_form .submit:hover, #content .extended_search_form .submit:hover {
+	opacity: 0.8;
+	background-color: #0066CC;
+	color: #fff;
+}
